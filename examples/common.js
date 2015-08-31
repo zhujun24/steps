@@ -103,15 +103,13 @@
 /* 3 */
 /***/ function(module, exports) {
 
-	module.exports = React;
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 4 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	'use strict';
-	
-	module.exports = __webpack_require__(5);
+	module.exports = React;
 
 /***/ },
 /* 5 */
@@ -119,10 +117,7 @@
 
 	'use strict';
 	
-	var Steps = __webpack_require__(6);
-	Steps.Step = __webpack_require__(7);
-	
-	module.exports = Steps;
+	module.exports = __webpack_require__(6);
 
 /***/ },
 /* 6 */
@@ -130,7 +125,18 @@
 
 	'use strict';
 	
-	var React = __webpack_require__(3);
+	var Steps = __webpack_require__(7);
+	Steps.Step = __webpack_require__(8);
+	
+	module.exports = Steps;
+
+/***/ },
+/* 7 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(4);
 	
 	var Steps = React.createClass({
 	  displayName: 'Steps',
@@ -243,12 +249,12 @@
 	module.exports = Steps;
 
 /***/ },
-/* 7 */
+/* 8 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var React = __webpack_require__(3);
+	var React = __webpack_require__(4);
 	
 	var Step = React.createClass({
 	  displayName: 'Step',
