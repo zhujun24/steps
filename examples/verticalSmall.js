@@ -1,14 +1,14 @@
-webpackJsonp([3],{
+webpackJsonp([5],{
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(11);
+	module.exports = __webpack_require__(13);
 
 
 /***/ },
 
-/***/ 11:
+/***/ 13:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -23,31 +23,32 @@ webpackJsonp([3],{
 	
 	var steps = [{
 	  status: 'finish',
-	  title: '已完成'
+	  title: '已完成',
+	  description: '这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊'
 	}, {
 	  status: 'process',
-	  title: '进行中'
+	  title: '进行中',
+	  description: '这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊'
 	}, {
 	  status: 'wait',
-	  title: '待运行'
-	}, {
-	  status: 'wait',
-	  title: '待运行'
+	  title: '待运行',
+	  description: '这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊'
 	}].map(function (s, i) {
 	  return React.createElement(Steps.Step, {
 	    key: i,
 	    status: s.status,
-	    title: s.title
+	    title: s.title,
+	    description: s.description
 	  });
 	});
 	
 	React.render(React.createElement(
 	  Steps,
-	  { size: 'small' },
+	  { direction: 'vertical', size: 'small', maxDescriptionWidth: '100%' },
 	  steps
 	), container);
 
 /***/ }
 
 });
-//# sourceMappingURL=smallSize.js.map
+//# sourceMappingURL=verticalSmall.js.map

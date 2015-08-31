@@ -1,14 +1,14 @@
-webpackJsonp([2],{
+webpackJsonp([4],{
 
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(10);
+	module.exports = __webpack_require__(12);
 
 
 /***/ },
 
-/***/ 10:
+/***/ 12:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -24,34 +24,31 @@ webpackJsonp([2],{
 	var steps = [{
 	  status: 'finish',
 	  title: '已完成',
-	  description: '这里是多信息的描述啊描述啊描述啊描述啊哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶'
+	  description: '这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊'
 	}, {
 	  status: 'process',
 	  title: '进行中',
-	  description: '这里是多信息的描述啊描述啊描述啊描述啊哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶'
+	  description: '这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊'
 	}, {
 	  status: 'wait',
 	  title: '待运行',
-	  description: '这里是多信息的描述啊描述啊描述啊描述啊哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶'
-	}, {
-	  status: 'wait',
-	  title: '待运行',
-	  description: '这里是多信息的描述啊描述啊描述啊描述啊哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶哦耶'
+	  description: '这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊这里是多信息的描述啊'
 	}].map(function (s, i) {
 	  return React.createElement(Steps.Step, {
 	    key: i,
 	    status: s.status,
 	    title: s.title,
-	    description: s.description });
+	    description: s.description
+	  });
 	});
 	
 	React.render(React.createElement(
 	  Steps,
-	  null,
+	  { direction: 'vertical', maxDescriptionWidth: '100%' },
 	  steps
 	), container);
 
 /***/ }
 
 });
-//# sourceMappingURL=simple.js.map
+//# sourceMappingURL=vertical.js.map
