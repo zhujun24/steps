@@ -3,21 +3,21 @@ webpackJsonp([4],{
 /***/ 0:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__(11);
+	module.exports = __webpack_require__(12);
 
 
 /***/ },
 
-/***/ 11:
+/***/ 12:
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
 	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-steps/assets/index.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-	__webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"rc-steps/assets/iconfont.css\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	__webpack_require__(2);
 	
-	var React = __webpack_require__(2);
-	var Steps = __webpack_require__(3);
+	var React = __webpack_require__(3);
+	var Steps = __webpack_require__(4);
 	
 	var container = document.getElementById('__react-content');
 	
@@ -44,7 +44,7 @@ webpackJsonp([4],{
 	
 	React.render(React.createElement(
 	  Steps,
-	  { direction: 'vertical', maxDescriptionWidth: '100%' },
+	  { direction: 'vertical' },
 	  steps
 	), container);
 

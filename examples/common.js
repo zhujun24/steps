@@ -97,15 +97,13 @@
 /* 2 */
 /***/ function(module, exports) {
 
-	module.exports = React;
+	// removed by extract-text-webpack-plugin
 
 /***/ },
 /* 3 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-	'use strict';
-	
-	module.exports = __webpack_require__(4);
+	module.exports = React;
 
 /***/ },
 /* 4 */
@@ -113,10 +111,7 @@
 
 	'use strict';
 	
-	var Steps = __webpack_require__(5);
-	Steps.Step = __webpack_require__(6);
-	
-	module.exports = Steps;
+	module.exports = __webpack_require__(5);
 
 /***/ },
 /* 5 */
@@ -124,7 +119,18 @@
 
 	'use strict';
 	
-	var React = __webpack_require__(2);
+	var Steps = __webpack_require__(6);
+	Steps.Step = __webpack_require__(7);
+	
+	module.exports = Steps;
+
+/***/ },
+/* 6 */
+/***/ function(module, exports, __webpack_require__) {
+
+	'use strict';
+	
+	var React = __webpack_require__(3);
 	
 	var Steps = React.createClass({
 	  displayName: 'Steps',
@@ -208,7 +214,7 @@
 	    var props = this.props;
 	    var prefixCls = props.prefixCls;
 	    var children = props.children;
-	    var maxDescriptionWidth = props.maxDescriptionWidth;
+	    var maxDescriptionWidth = props.direction === 'vertical' ? 'auto' : props.maxDescriptionWidth;
 	    var iconPrefix = props.iconPrefix;
 	    var len = children.length - 1;
 	    var iws = this._itemsWidth;
@@ -237,12 +243,12 @@
 	module.exports = Steps;
 
 /***/ },
-/* 6 */
+/* 7 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
 	
-	var React = __webpack_require__(2);
+	var React = __webpack_require__(3);
 	
 	var Step = React.createClass({
 	  displayName: 'Step',
